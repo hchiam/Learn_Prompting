@@ -35,20 +35,6 @@
     ]
   },
   {
-    "slug": "applied_prompting",
-    "title": "🧪 Applied Prompting",
-    "position": 19,
-    "subpages": [
-      {
-        "slug": "short_response",
-        "title": "🟢 Solve Discussion Questions",
-        "position": 3,
-        "href": "\\docs\\applied_prompting\\short_response",
-        "subpages": null
-      }
-    ]
-  },
-  {
     "slug": "image_prompting",
     "title": "🖼️ Image Prompting",
     "position": 40,
