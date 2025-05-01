@@ -40,13 +40,6 @@
     "position": 19,
     "subpages": [
       {
-        "slug": "mc_tutorial",
-        "title": "🟢 Multiple Choice Questions",
-        "position": 2,
-        "href": "\\docs\\applied_prompting\\mc_tutorial",
-        "subpages": null
-      },
-      {
         "slug": "short_response",
         "title": "🟢 Solve Discussion Questions",
         "position": 3,
