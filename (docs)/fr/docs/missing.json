@@ -40,13 +40,6 @@
     "position": 19,
     "subpages": [
       {
-        "slug": "overview",
-        "title": "🟢 Introduction",
-        "position": 1,
-        "href": "\\docs\\applied_prompting\\overview",
-        "subpages": null
-      },
-      {
         "slug": "mc_tutorial",
         "title": "🟢 Multiple Choice Questions",
         "position": 2,
@@ -65,13 +58,6 @@
         "title": "🟢 Build ChatGPT from GPT-3",
         "position": 4,
         "href": "\\docs\\applied_prompting\\build_chatgpt",
-        "subpages": null
-      },
-      {
-        "slug": "build_chatbot_from_kb",
-        "title": "🟢 Chatbot + Knowledge Base",
-        "position": 40,
-        "href": "\\docs\\applied_prompting\\build_chatbot_from_kb",
         "subpages": null
       }
     ]
