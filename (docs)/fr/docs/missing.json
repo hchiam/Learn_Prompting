@@ -52,13 +52,6 @@
         "position": 3,
         "href": "\\docs\\applied_prompting\\short_response",
         "subpages": null
-      },
-      {
-        "slug": "build_chatgpt",
-        "title": "🟢 Build ChatGPT from GPT-3",
-        "position": 4,
-        "href": "\\docs\\applied_prompting\\build_chatgpt",
-        "subpages": null
       }
     ]
   },
