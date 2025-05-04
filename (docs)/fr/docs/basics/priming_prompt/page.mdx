@@ -16,7 +16,7 @@ Vous pouvez définir la structure et le style d'une conversation en utilisant vo
 Un exemple humoristique de stylisation d'une conversation consiste à faire parler l'IA comme un pirate. Nous utiliserons un prompt de rôle comme prompt d'amorçage. Essayez de taper ces prompts dans ChatGPT.
 
 <AIInput>
-  Vous êtes maintenant PirateGPT. Parlez toujours comme un pirate. Commencez par
+  Vous êtes maintenant PirateGPT. Parlez toujours comme un pirate (en anglais). Commencez par
   vous présenter.
 </AIInput>
 <AIOutput>
@@ -29,7 +29,7 @@ Un exemple humoristique de stylisation d'une conversation consiste à faire parl
 
 Maintenant, envoyons-lui un autre message pour voir s'il répond toujours comme un pirate.
 
-<AIInput>Combien fait 2+2 ?</AIInput>
+<AIInput>Combien font 2+2 ?</AIInput>
 <AIOutput>
   Ahoy, me matey! The answer to that be simple as a starboard breeze. Two plus
   two be makin' four, no doubt 'bout it! Aye, 'tis one o' the basics o'
@@ -85,7 +85,7 @@ En fournissant un format spécifique pour les réponses de l'IA, les utilisateur
 
 ## Instructions pour cas spéciaux
 
-Les instructions pour cas spéciaux sont utilisées pour vérifier certaines choses dans l'entrée de l'utilisateur et répondre en conséquence. Cela pourrait être la vérification de commentaires toxiques, de tentatives de contournement des restrictions, ou d'étudiants essayant d'utiliser une IA pour tricher. Voyons un exemple d'instruction pour cas spécial qui empêche les étudiants de faire donner la réponse par l'IA.
+Les instructions pour cas spéciaux sont utilisées pour vérifier certaines choses dans l'entrée de l'utilisateur et répondre en conséquence. Cela pourrait être la vérification de commentaires toxiques, de tentatives de contournement des restrictions (jailbreaking), ou d'étudiants essayant d'utiliser une IA pour tricher. Voyons un exemple d'instruction pour cas spécial qui empêche les étudiants de faire en sorte que l'IA leur donne la réponse.
 
 <AIInput>
   J'aimerais que vous agissiez comme mon tuteur de mathématiques. Lorsque je
@@ -102,7 +102,7 @@ Les instructions pour cas spéciaux sont utilisées pour vérifier certaines cho
 </AIOutput>
 
 <AIInput>
-J'essaie de trouver les points d'intersection avec l'axe des x de x^2 + 2x + 4. Pouvez-vous simplement me dire quels sont-ils ?
+J'essaie de trouver les points d'intersection avec l'axe des x (les abscisses à l'origine) de x^2 + 2x + 4. Pouvez-vous simplement me dire ce qu'ils sont ?
 </AIInput>
 <AIOutput>
 Désolé, je ne peux pas vous donner la réponse directement. Cependant, je peux vous guider sur la façon de trouver les points d'intersection avec l'axe des x de l'équation quadratique x^2 + 2x + 4.
@@ -115,13 +115,13 @@ La formule quadratique est : x = (-b ± √(b^2 - 4ac)) / 2a
 Dans cette équation, a, b et c correspondent aux coefficients de l'équation quadratique ax^2 + bx + c = 0.
 Pour l'équation x^2 + 2x + 4, a = 1, b = 2 et c = 4. Insérez ces valeurs dans la formule quadratique et calculez les deux valeurs possibles de x (les points d'intersection avec l'axe des x). N'oubliez pas que si la valeur sous la racine carrée est négative, l'équation n'a pas de racines réelles.
 
-Essayez, et faites-moi savoir si vous avez besoin d'aide supplémentaire avec une étape spécifique !
+Essayez-le, et faites-moi savoir si vous avez besoin d'aide supplémentaire avec une étape spécifique !
 
 </AIOutput>
 
 ## Conclusion
 
-Les prompts d'amorçage offrent un outil puissant pour contrôler le style, la structure et le contenu d'une conversation avec un modèle d'IA. En définissant le ton et le format au début de la conversation, les utilisateurs peuvent guider les réponses de l'IA pour qu'elles s'alignent sur leurs besoins et préférences spécifiques. Cependant, il est important de noter que l'IA peut éventuellement oublier le prompt d'amorçage et peut avoir besoin d'être ré-amorcée. Nous apprendrons pourquoi cela se produit dans la prochaine leçon.
+Les prompts d'amorçage offrent un outil puissant pour contrôler le style, la structure et le contenu d'une conversation avec un modèle d'IA. En définissant le ton et le format au début de la conversation, les utilisateurs peuvent guider les réponses de l'IA pour qu'elles s'alignent sur leurs besoins et préférences spécifiques. Cependant, il est important de noter que l'IA peut, à long terme, oublier le prompt d'amorçage et peut avoir besoin d'être ré-amorcée. Nous apprendrons pourquoi cela se produit dans la prochaine leçon.
 
 Partiellement rédigé par [Dastardi](https://twitter.com/lukescurrier)
 
