@@ -117,13 +117,6 @@
         "subpages": null
       },
       {
-        "slug": "fix_deformed_generations",
-        "title": "🟢 Fix Deformed Generations",
-        "position": 90,
-        "href": "\\docs\\image_prompting\\fix_deformed_generations",
-        "subpages": null
-      },
-      {
         "slug": "shot_type",
         "title": "🟢 Shot type",
         "position": 90,
