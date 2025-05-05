@@ -82,13 +82,6 @@
     "position": 40,
     "subpages": [
       {
-        "slug": "intro",
-        "title": "🟢 Introduction",
-        "position": 1,
-        "href": "\\docs\\image_prompting\\intro",
-        "subpages": null
-      },
-      {
         "slug": "style_modifiers",
         "title": "🟢 Style Modifiers",
         "position": 4,
