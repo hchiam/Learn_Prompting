@@ -101,13 +101,6 @@
         "position": 90,
         "href": "\\docs\\image_prompting\\shot_type",
         "subpages": null
-      },
-      {
-        "slug": "resources",
-        "title": "🟢 Resources",
-        "position": 100,
-        "href": "\\docs\\image_prompting\\resources",
-        "subpages": null
       }
     ]
   },
