@@ -117,13 +117,6 @@
         "subpages": null
       },
       {
-        "slug": "midjourney",
-        "title": "🟢 Midjourney",
-        "position": 99,
-        "href": "\\docs\\image_prompting\\midjourney",
-        "subpages": null
-      },
-      {
         "slug": "resources",
         "title": "🟢 Resources",
         "position": 100,
