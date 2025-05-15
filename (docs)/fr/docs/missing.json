@@ -89,13 +89,6 @@
         "subpages": null
       },
       {
-        "slug": "quality_boosters",
-        "title": "🟢 Quality Boosters",
-        "position": 5,
-        "href": "\\docs\\image_prompting\\quality_boosters",
-        "subpages": null
-      },
-      {
         "slug": "repetition",
         "title": "🟢 Repetition",
         "position": 50,
