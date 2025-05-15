@@ -89,13 +89,6 @@
         "subpages": null
       },
       {
-        "slug": "repetition",
-        "title": "🟢 Repetition",
-        "position": 50,
-        "href": "\\docs\\image_prompting\\repetition",
-        "subpages": null
-      },
-      {
         "slug": "weighted_terms",
         "title": "🟢 Weighted Terms",
         "position": 60,
