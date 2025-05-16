@@ -77,20 +77,6 @@
     ]
   },
   {
-    "slug": "image_prompting",
-    "title": "🖼️ Image Prompting",
-    "position": 40,
-    "subpages": [
-      {
-        "slug": "weighted_terms",
-        "title": "🟢 Weighted Terms",
-        "position": 60,
-        "href": "\\docs\\image_prompting\\weighted_terms",
-        "subpages": null
-      }
-    ]
-  },
-  {
     "slug": "intermediate",
     "title": "🧙‍♂️ Intermediate",
     "position": 15,
