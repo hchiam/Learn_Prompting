@@ -96,13 +96,6 @@
         "subpages": null
       },
       {
-        "slug": "generated_knowledge",
-        "title": "🟡 Generated Knowledge",
-        "position": 7,
-        "href": "\\docs\\intermediate\\generated_knowledge",
-        "subpages": null
-      },
-      {
         "slug": "least_to_most",
         "title": "🟡 Least to Most Prompting",
         "position": 7,
