@@ -77,20 +77,6 @@
     ]
   },
   {
-    "slug": "intermediate",
-    "title": "🧙‍♂️ Intermediate",
-    "position": 15,
-    "subpages": [
-      {
-        "slug": "zero_shot_cot",
-        "title": "🟢 Zero Shot Chain of Thought",
-        "position": 4,
-        "href": "\\docs\\intermediate\\zero_shot_cot",
-        "subpages": null
-      }
-    ]
-  },
-  {
     "slug": "tooling",
     "title": "🔨 Tooling",
     "position": 60,
