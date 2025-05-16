@@ -82,13 +82,6 @@
     "position": 15,
     "subpages": [
       {
-        "slug": "chain_of_thought",
-        "title": "🟢 Chain of Thought Prompting",
-        "position": 3,
-        "href": "\\docs\\intermediate\\chain_of_thought",
-        "subpages": null
-      },
-      {
         "slug": "zero_shot_cot",
         "title": "🟢 Zero Shot Chain of Thought",
         "position": 4,
