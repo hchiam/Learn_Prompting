@@ -94,13 +94,6 @@
         "position": 60,
         "href": "\\docs\\image_prompting\\weighted_terms",
         "subpages": null
-      },
-      {
-        "slug": "shot_type",
-        "title": "🟢 Shot type",
-        "position": 90,
-        "href": "\\docs\\image_prompting\\shot_type",
-        "subpages": null
       }
     ]
   },
