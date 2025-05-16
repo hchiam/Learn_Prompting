@@ -96,13 +96,6 @@
         "subpages": null
       },
       {
-        "slug": "revisiting_roles",
-        "title": "🟡 Revisiting Roles",
-        "position": 7,
-        "href": "\\docs\\intermediate\\revisiting_roles",
-        "subpages": null
-      },
-      {
         "slug": "whats_in_a_prompt",
         "title": "🟢 What's in a Prompt?",
         "position": 7,
