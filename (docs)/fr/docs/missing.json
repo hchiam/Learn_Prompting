@@ -82,13 +82,6 @@
     "position": 60,
     "subpages": [
       {
-        "slug": "tools",
-        "title": "Prompt Engineering Tools",
-        "position": 50,
-        "href": "\\docs\\tooling\\tools",
-        "subpages": null
-      },
-      {
         "slug": "IDEs",
         "title": "Prompt Engineering IDEs",
         "position": 60,
