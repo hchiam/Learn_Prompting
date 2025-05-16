@@ -82,13 +82,6 @@
     "position": 40,
     "subpages": [
       {
-        "slug": "style_modifiers",
-        "title": "🟢 Style Modifiers",
-        "position": 4,
-        "href": "\\docs\\image_prompting\\style_modifiers",
-        "subpages": null
-      },
-      {
         "slug": "weighted_terms",
         "title": "🟢 Weighted Terms",
         "position": 60,
