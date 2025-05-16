@@ -28,7 +28,7 @@ Cependant, les chatbots basés sur l'intention ont leurs propres problèmes. L'u
 
 ## Comment GPT-3 peut aider
 
-C'est là que GPT-3 peut être particulièrement utile. Au lieu d'avoir de nombreuses intentions très spécifiques, chaque intention peut être plus large et s'appuyer sur un document de votre [Base de Connaissances](https://en.wikipedia.org/wiki/Knowledge_base). Une Base de Connaissances (KB) est composée d'informations stockées sous forme de données structurées et non structurées, prête à être utilisée pour l'analyse ou l'inférence. Votre KB peut être composée d'une série de documents expliquant comment utiliser vos produits.
+C'est là que GPT-3 peut être particulièrement utile. Au lieu d'avoir de nombreuses intentions très spécifiques, chaque intention peut être plus large et s'appuyer sur un document de votre [Base de Connaissances](https://fr.wikipedia.org/wiki/Base_de_connaissance). Une Knowledge Base (KB - "Base de Connaissances") est composée d'informations stockées sous forme de données structurées et non structurées, prête à être utilisée pour l'analyse ou l'inférence. Votre KB peut être composée d'une série de documents expliquant comment utiliser vos produits.
 
 De cette façon, chaque intention est associée à un document plutôt qu'à une liste de questions et une réponse spécifique, par exemple une intention pour les "problèmes de connexion", une intention pour "comment s'abonner", etc. Lorsqu'un utilisateur pose une question sur la connexion, nous pouvons transmettre le document "problèmes de connexion" à GPT-3 comme information contextuelle et générer une réponse spécifique à la question de l'utilisateur.
 
@@ -60,7 +60,7 @@ Ainsi, le pipeline du chatbot pourrait être composé de deux étapes :
 1. D'abord, nous devons sélectionner l'intention appropriée pour la question de l'utilisateur, c'est-à-dire que nous devons récupérer le bon document de notre base de connaissances.
 2. Ensuite, une fois que nous avons le bon document, nous pouvons utiliser GPT-3 pour générer une réponse appropriée pour l'utilisateur. Ce faisant, nous devrons élaborer un bon prompt.
 
-La première étape est essentiellement résolue par la [recherche sémantique](https://en.wikipedia.org/wiki/Semantic_search). Nous pouvons utiliser des modèles pré-entraînés de la bibliothèque [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) et attribuer facilement un score à chaque document. Le document avec le score le plus élevé est celui qui sera utilisé pour générer la réponse du chatbot.
+La première étape est essentiellement résolue par la [recherche sémantique](https://fr.wikipedia.org/wiki/Recherche_s%C3%A9mantique). Nous pouvons utiliser des modèles pré-entraînés de la bibliothèque [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) et attribuer facilement un score à chaque document. Le document avec le score le plus élevé est celui qui sera utilisé pour générer la réponse du chatbot.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -85,7 +85,7 @@ Pour élaborer le prompt, nous expérimenterons en utilisant :
 
 - [**Role-prompting**](https://learnprompting.org/docs/basics/roles) : une technique heuristique qui attribue un rôle spécifique à l'IA.
 - **Informations pertinentes de la KB**, c'est-à-dire le document récupéré lors de l'étape de recherche sémantique.
-- **Les derniers messages échangés entre l'utilisateur et le chatbot**. Ces derniers sont utiles pour les messages envoyés par l'utilisateur où le contexte complet n'est pas spécifié. Nous verrons un exemple plus tard. Consultez [cet exemple](https://learnprompting.org/docs/applied_prompting/build_chatgpt) pour voir comment gérer les conversations avec GPT-3.
+- **Les derniers messages échangés entre l'utilisateur et le chatbot**. Ces derniers sont utiles pour les messages envoyés par l'utilisateur où le contexte complet n'est pas spécifié. Nous verrons un exemple plus tard. Consultez [cet exemple](https://learnprompting.org/fr/docs/applied_prompting/build_chatgpt) pour voir comment gérer les conversations avec GPT-3.
 - Enfin, **la question de l'utilisateur**.
 
 <div style={{ textAlign: "left" }}>
@@ -130,9 +130,21 @@ Nous pouvons ajouter <span className="yellow-highlight">son contenu</span> au pr
   En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
   <br />
   <span className="yellow-highlight">
-    DÉBUT CONTEXTE Connexion à VideoGram depuis le site web 1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram.
+    DÉBUT DE CONTEXTE 
+    Connexion à VideoGram depuis le site web 
+    1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+    2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+    3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+    4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+    5. Vous devriez maintenant être connecté à votre compte VideoGram.
     <br />
-    Connexion à VideoGram depuis l'application mobile 1. Ouvrez l'application VideoGram sur votre appareil mobile. 2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram. FIN CONTEXTE
+    Connexion à VideoGram depuis l'application mobile 
+    1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+    2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+    3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+    4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+    5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+    FIN DE CONTEXTE
   </span>
 </pre>
 
@@ -141,12 +153,26 @@ Enfin, nous devons ajouter <span className="yellow-highlight">la conversation et
 <pre>
   En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
   <br />
-  DÉBUT CONTEXTE Connexion à VideoGram depuis le site web 1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram.
+  DÉBUT DE CONTEXTE 
+  Connexion à VideoGram depuis le site web 
+  1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+  2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram.
   <br />
-  Connexion à VideoGram depuis l'application mobile 1. Ouvrez l'application VideoGram sur votre appareil mobile. 2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram. FIN CONTEXTE
+  Connexion à VideoGram depuis l'application mobile 
+  1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+  2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+  FIN DE CONTEXTE
   <br />
   <span className="yellow-highlight">
-    SKIPPY : Bonjour, je suis Skippy ! Comment puis-je vous aider ? UTILISATEUR : Je ne trouve pas le bouton de connexion. SKIPPY :
+    SKIPPY : Bonjour, je m'appelle Skippy ! Comment puis-je vous aider ? 
+    UTILISATEUR : Je ne trouve pas le bouton de connexion. 
+    SKIPPY :
   </span>
 </pre>
 
@@ -167,12 +193,24 @@ Essayons avec une expression d'utilisateur plus vague, comme <span className="ye
 <pre>
   En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
   <br />
-  DÉBUT CONTEXTE Connexion à VideoGram depuis le site web 1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram.
+  DÉBUT DE CONTEXTE 
+  Connexion à VideoGram depuis le site web 
+  1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+  2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram.
   <br />
-  Connexion à VideoGram depuis l'application mobile 1. Ouvrez l'application VideoGram sur votre appareil mobile. 2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 5. Vous devriez maintenant être connecté à votre compte VideoGram. FIN CONTEXTE
+  Connexion à VideoGram depuis l'application mobile 
+  1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+  2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+  FIN DE CONTEXTE
   <br />
-  SKIPPY : Bonjour, je suis Skippy ! Comment puis-je vous aider ? UTILISATEUR :{" "}
-  <span className="yellow-highlight">Impossible de me connecter</span>
+  SKIPPY : Bonjour, je m'appelle Skippy ! Comment puis-je vous aider ? 
+  UTILISATEUR : <span className="yellow-highlight">Impossible de me connecter</span>
   SKIPPY :
 </pre>
 
@@ -184,7 +222,7 @@ GPT-3 répond en essayant de mieux comprendre quel est le problème de l'utilisa
   </span>
 </pre>
 
-Voici comment se déroule la conversation complète. Le prompt complet est masqué pour une meilleure visibilité.
+Voici comment se déroule ensuite la conversation complète. Le prompt complet est masqué pour une meilleure visibilité.
 
 <pre>
   UTILISATEUR : Impossible de me connecter
