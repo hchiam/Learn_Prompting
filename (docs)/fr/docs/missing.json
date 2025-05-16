@@ -271,26 +271,5 @@
         ]
       }
     ]
-  },
-  {
-    "slug": "trainable",
-    "title": "💪 Prompt Tuning",
-    "position": 70,
-    "subpages": [
-      {
-        "slug": "soft_prompting",
-        "title": "🔴 Soft Prompts",
-        "position": 1,
-        "href": "\\docs\\trainable\\soft_prompting",
-        "subpages": null
-      },
-      {
-        "slug": "discretized",
-        "title": "🔴 Interpretable Soft Prompts",
-        "position": 2,
-        "href": "\\docs\\trainable\\discretized",
-        "subpages": null
-      }
-    ]
   }
 ]
