@@ -87,13 +87,6 @@
         "position": 4,
         "href": "\\docs\\intermediate\\zero_shot_cot",
         "subpages": null
-      },
-      {
-        "slug": "whats_in_a_prompt",
-        "title": "🟢 What's in a Prompt?",
-        "position": 7,
-        "href": "\\docs\\intermediate\\whats_in_a_prompt",
-        "subpages": null
       }
     ]
   },
