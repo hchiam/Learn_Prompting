@@ -96,13 +96,6 @@
         "subpages": null
       },
       {
-        "slug": "least_to_most",
-        "title": "🟡 Least to Most Prompting",
-        "position": 7,
-        "href": "\\docs\\intermediate\\least_to_most",
-        "subpages": null
-      },
-      {
         "slug": "long_form_content",
         "title": "🟡 Dealing With Long Form Content",
         "position": 7,
