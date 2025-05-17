@@ -63,7 +63,7 @@ Comme d'autres modèles de la série GPT-3.5, ChatGPT a été entraîné en util
   </p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">
+<a href="https://learnprompting.org/fr/docs/basics/prompting">
   Le prompting est le processus d'instruction d'une IA pour faire quelque chose.
 </a>
 Comme vous l'avez probablement vu dans les exemples de ChatGPT en ligne, vous pouvez lui demander de faire à peu près n'importe quoi. Les cas d'utilisation courants sont la synthèse de texte, la rédaction de contenu basée sur une description, ou la création de choses comme des poèmes, des recettes, et bien plus encore.{" "}
@@ -87,7 +87,7 @@ ChatGPT est à la fois un modèle de langage et une interface utilisateur. Le pr
 
 Le modèle de langage complète le prompt en déterminant quels mots viennent ensuite en fonction des probabilités qu'il a apprises pendant le pré-entraînement (@jurafsky2009).
 
-GPT-3 est capable d'« apprendre » à partir d'une simple instruction ou de quelques exemples dans le prompt. Cette dernière approche est appelée apprentissage à partir de quelques exemples, ou apprentissage en contexte (@brown2020language). Dans le prompt du chatbot ci-dessus, je crée un chatbot fictif nommé Skippy, et je lui demande de fournir des réponses aux utilisateurs. GPT-3 comprend le format d'aller-retour, `USER: {entrée utilisateur}` et `SKIPPY: {réponse de skippy}`. GPT-3 comprend que Skippy est un chatbot et que les échanges précédents sont une conversation, de sorte que lorsque nous fournissons la prochaine entrée utilisateur, "Skippy" répondra.
+GPT-3 est capable d'« apprendre » à partir d'une simple instruction ou de quelques exemples dans le prompt. Cette dernière approche est appelée "few-shot" (apprentissage à partir de quelques exemples), ou apprentissage en contexte (@brown2020language). Dans le prompt du chatbot ci-dessus, je crée un chatbot fictif nommé Skippy, et je lui demande de fournir des réponses aux utilisateurs. GPT-3 comprend le format d'aller-retour, `UTILISATEUR: {entrée utilisateur}` et `SKIPPY: {réponse de skippy}`. GPT-3 comprend que Skippy est un chatbot et que les échanges précédents sont une conversation, de sorte que lorsque nous fournissons la prochaine entrée utilisateur, "Skippy" répondra.
 
 ### Mémorisation
 
@@ -101,7 +101,7 @@ Il existe de nombreux cas d'utilisation différents de prompts de chatbot qui st
 
 #### Chatbot thérapeutique qui vous demande comment s'est passée votre journée
 
-Il peut être utile d'avoir un chatbot qui pose activement des questions et obtient des retours de l'utilisateur. Voici un exemple de prompt de chatbot thérapeutique qui posera des questions et des suivi pour aider l'utilisateur à réfléchir à sa journée.
+Il peut être utile d'avoir un chatbot qui pose activement des questions et obtient des retours de l'utilisateur. Voici un exemple de prompt de chatbot thérapeutique qui posera des questions et des suivis pour aider l'utilisateur à réfléchir à sa journée.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -119,7 +119,7 @@ Il peut être utile d'avoir un chatbot qui pose activement des questions et obti
 #### Discuter avec votre moi plus jeune en utilisant d'anciens journaux intimes
 
 <a href="https://twitter.com/michellehuang42">Michelle Huang</a>
-a utilisé GPT-3 pour avoir une conversation avec son moi plus jeune. Le prompt utilise un contexte spécifique, dans
+a utilisé GPT-3 pour avoir une conversation avec son moi plus jeune. Le prompt utilise un peu de contexte, dans
 ce cas des entrées d'un ancien journal intime, associé à un format de conversation aller-retour.
 GPT-3 est capable d'imiter une personnalité basée sur ces entrées.
 
