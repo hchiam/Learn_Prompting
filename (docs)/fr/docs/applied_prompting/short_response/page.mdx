@@ -5,13 +5,13 @@ export const metadata = {
 
 # 🟢 Résoudre des questions de discussion
 
-Avec le bon prompting, GPT-3 est très capable de rédiger des réponses courtes. Pour démontrer cela, je vais examiner **la résolution de questions de discussion**, un devoir hebdomadaire courant dans de nombreux cours universitaires. Une réponse à une question de discussion compte généralement entre 100 et 700 mots. Les contenus plus longs peuvent être un peu plus délicats car les LLM ont une mémoire limitée et ont du mal à comprendre l'image globale de ce qu'ils écrivent (@jin2022plot).
+Avec le bon prompting, GPT-3 est très capable de rédiger des réponses courtes. Pour démontrer cela, je vais examiner **la résolution de questions de discussion**, un devoir hebdomadaire courant dans de nombreux cours universitaires. Une réponse à une question de discussion compte généralement entre 100 et 700 mots. Les contenus plus longs peuvent être un peu plus difficiles à traiter correctement, car les LLM ont une mémoire limitée et ont du mal à comprendre l'image globale de ce qu'ils écrivent (@jin2022plot).
 
 Examinons un exemple de question de discussion basique :
 
 > _"Quels sont les problèmes environnementaux les plus urgents auxquels notre planète est confrontée aujourd'hui, et quelles mesures les individus peuvent-ils prendre pour aider à résoudre ces problèmes ?"_
 
-Nous pouvons transformer cela en un prompt simple pour GPT-3 en ajoutant <span className="yellow-highlight">Répondez à ce qui suit :</span> au début.
+Nous pouvons transformer cela en un prompt simple pour GPT-3 en préfixant <span className="yellow-highlight">Répondez à ce qui suit :</span>.
 
 <pre>
   <span className="yellow-highlight">Répondez à ce qui suit :</span>
@@ -24,7 +24,7 @@ Les résultats générés avec ce prompt ne sont pas cohérents, et certains ne 
 
 <pre>
   <span className="yellow-highlight">
-    Rédigez un essai très détaillé avec introduction, développement et paragraphes de conclusion
+    Rédigez un essai très détaillé avec paragraphes d'introduction, de développement et de conclusion
     en réponse à ce qui suit :
   </span>
   <br />
@@ -179,6 +179,6 @@ J'ai généré quelques expansions avec ce prompt et j'en ai sélectionné une q
   </span>
 </pre>
 
-En utilisant des prompts d'expansion, nous pouvons écrire de manière plus incrémentale et itérer à chaque étape. C'est utile lorsque vous devez **produire une sortie de meilleure qualité et souhaitez modifier les étapes incrémentielles**.
+En utilisant des prompts d'expansion, nous pouvons écrire de manière plus incrémentale et itérer à chaque étape. C'est utile lorsque vous devez **produire une sortie de meilleure qualité et souhaitez modifier les étapes incrémentales**.
 
 Écrit par [jayo78](https://twitter.com/jayo782).
