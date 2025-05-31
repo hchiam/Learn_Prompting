@@ -88,7 +88,7 @@ Assurez-vous d'avoir un [compte Zapier](https://zapier.com/sign-up) (vous pouvez
     </details>
     <details>
       <summary>
-        Étape 3 : Inviter le contenu de l'email
+        Étape 3 : Prompting pour le contenu de l'email
         <br />
       </summary>
 
@@ -123,17 +123,17 @@ Assurez-vous d'avoir un [compte Zapier](https://zapier.com/sign-up) (vous pouvez
 Voici une configuration dans Zapier qui vous permet de faire un résumé très basique comme indiqué dans
 le diagramme. Elle a ses limites, mais elle fait le travail et peut constituer une base de données utile.
 
-## Optimisation de l'invite pour de meilleurs résultats
+## Optimisation du prompt pour de meilleurs résultats
 
-Il existe quelques façons simples d'améliorer vos résultats. Ajouter du contexte et des invites de rôle peut améliorer la sortie. Cependant, le sujet et le contenu de vos emails peuvent couvrir un large éventail de sujets. Cela signifie que des instructions générales feront un meilleur travail que des instructions très spécifiques, qui pourraient dérouter le modèle.
+Il existe quelques façons simples d'améliorer vos résultats. Ajouter du contexte et des prompts de rôle peut améliorer la sortie. Cependant, le sujet et le contenu de vos emails peuvent couvrir un large éventail de sujets. Cela signifie que des instructions générales feront un meilleur travail que des instructions très spécifiques, qui pourraient dérouter le modèle.
 
-Pour des raisons pratiques, il est utile de donner une instruction, suivie en indiquant à GPT-3 quand l'email commence dans l'invite en ajoutant simplement "Email : " et en terminant l'invite par "Résumé : ". Cela évite que GPT-3 ne réponde par "Bien sûr ! Je peux le résumer pour vous...".
+Pour des raisons pratiques, il est utile de donner une instruction, suivie en indiquant à GPT-3 quand l'email commence dans le prompt en ajoutant simplement "Email : " et en terminant le prompt par "Résumé : ". Cela évite que GPT-3 ne réponde par "Bien sûr ! Je peux le résumer pour vous...".
 
-L'invitation de rôle peut également être utile ici. Demander à GPT-3 d'agir comme un assistant personnel aide à augmenter la qualité du résumé.
+Le prompting de rôle peut également être utile ici. Demander à GPT-3 d'agir comme un assistant personnel aide à augmenter la qualité du résumé.
 Si vous voulez résumer des emails professionnels, ajouter simplement le rôle que vous avez donne à GPT-3 un contexte avec lequel travailler. Il agit comme s'il supposait un certain niveau de connaissance de la part du lecteur, ce qui aide à filtrer les parties non pertinentes de l'email.
 Ci-dessous, nous montrons quelques exemples avec des emails qu'un administrateur de bureau pourrait recevoir.
 
-Vous pouvez lui demander de résumer un email simple en points, cependant, cela pourrait ne pas être si utile selon la façon dont vous souhaitez utiliser le résumé. Pour parcourir rapidement les échanges d'emails, vous pourriez simplement vouloir qu'il soit court et concis. Demander simplement cela dans l'invite fonctionne bien. Ci-dessous est un exemple de cette invite. Ajustez-la et jouez avec pour voir comment elle change.
+Vous pouvez lui demander de résumer un email simple en points, cependant, cela pourrait ne pas être si utile selon la façon dont vous souhaitez utiliser le résumé. Pour parcourir rapidement les échanges d'emails, vous pourriez simplement vouloir qu'il soit court et concis. Demander simplement cela dans le prompt fonctionne bien. Ci-dessous est un exemple de ce prompt. Ajustez-le et jouez avec pour voir comment il change.
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiUmVxdWVzdCBmb3IgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZHVlIHRvIGhpZ2ggd29ya2xvYWQuIExpc3Qgb2YgcmVxdWVzdGVkIGl0ZW1zOiBwcmludGVyIHBhcGVyLCBpbmsgY2FydHJpZGdlcyBmb3IgSFAgcHJpbnRlciBpbiBjb25mZXJlbmNlIHJvb20sIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzLCBhbmQgaGlnaGxpZ2h0ZXJzLiBSZXF1ZXN0aW5nIGRlbGl2ZXJ5IGluZm9ybWF0aW9uIGFuZCBpZiB0aGVyZSBhcmUgYW55IHF1ZXN0aW9ucyBvciBjb25jZXJucy4iLCJwcm9tcHQiOiJBY3QgYXMgbXkgcGVyc29uYWwgYXNzaXN0YW50LiBJIGFtIGFuIG9mZmljZSBhZG1pbmlzdHJhdG9yLiBTdW1tYXJpemUgdGhlIGZvbGxvd2luZyBlbWFpbCBhcyBjb25jaXNlbHkgYXMgeW91IGNhbiwgaWdub3JlIHRoZSBmb290ZXIgYW5kIGhlYWRlciBhbmQgYW55IHByZXZpb3VzIGVtYWlscy4gXG5cbkVtYWlsOiBSZXF1ZXN0IGZvciBBZGRpdGlvbmFsIE9mZmljZSBTdXBwbGllcyBEZWFyIE9mZmljZSBBZG1pbmlzdHJhdG9yLCBJIGhvcGUgdGhpcyBlbWFpbCBmaW5kcyB5b3Ugd2VsbC4gSSBhbSB3cml0aW5nIHRvIHJlcXVlc3QgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZm9yIG91ciB0ZWFtLiBBcyB5b3Uga25vdywgd2UgaGF2ZSBiZWVuIGV4cGVyaWVuY2luZyBhIGhpZ2ggdm9sdW1lIG9mIHdvcmsgbGF0ZWx5IGFuZCBoYXZlIGJlZW4gdXNpbmcgb3VyIHN1cHBsaWVzIGF0IGEgZmFzdGVyIHJhdGUgdGhhbiB1c3VhbC4gV2Ugd291bGQgZ3JlYXRseSBhcHByZWNpYXRlIGl0IGlmIHlvdSBjb3VsZCBwcm92aWRlIHVzIHdpdGggdGhlIGZvbGxvd2luZyBpdGVtczogUHJpbnRlciBwYXBlciBJbmsgY2FydHJpZGdlcyBmb3IgdGhlIEhQIHByaW50ZXIgaW4gdGhlIGNvbmZlcmVuY2Ugcm9vbSBTdGlja3kgbm90ZXMgQmluZGVyIGNsaXBzIEhpZ2hsaWdodGVycyBQbGVhc2UgbGV0IG1lIGtub3cgaWYgdGhlcmUgYXJlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMsIGFuZCB3aGVuIHdlIGNhbiBleHBlY3QgdGhlIHN1cHBsaWVzIHRvIGJlIGRlbGl2ZXJlZC4gVGhhbmsgeW91IGZvciB5b3VyIGhlbHAuIFxuXG5CZXN0IHJlZ2FyZHMsIFlvdXIgTmFtZSBTdW1tYXJ5OlxuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -166,11 +166,11 @@ Il ne vous reste plus que les parties les plus importantes du résumé !
 
 ## Autres cas d'utilisation
 
-Maintenant que vous avez vu l'exemple des résumés, nous allons mentionner quelques autres cas d'utilisation pour Zapier+GPT-3. Un excellent exemple consiste à laisser GPT-3 catégoriser vos emails. Cela revient simplement à lui indiquer dans une invite de catégoriser l'email suivant selon les catégories que vous souhaitez.
+Maintenant que vous avez vu l'exemple des résumés, nous allons mentionner quelques autres cas d'utilisation pour Zapier+GPT-3. Un excellent exemple consiste à laisser GPT-3 catégoriser vos emails. Cela revient simplement à lui indiquer dans un prompt de catégoriser l'email suivant selon les catégories que vous souhaitez.
 
-Un exemple plus approfondi serait d'avoir plusieurs invites. Vous pouvez utiliser une invite pour générer une réponse qui accepte les demandes de l'email et une autre qui refuse ou rejette. Les deux peuvent être stockées dans vos brouillons et être prêtes à être envoyées quand vous le souhaitez.
+Un exemple plus approfondi serait d'avoir plusieurs prompts. Vous pouvez utiliser un prompt pour générer une réponse qui accepte les demandes de l'email et un autre qui refuse ou rejette. Les deux peuvent être stockés dans vos brouillons et être prêts à être envoyés quand vous le souhaitez.
 
-Si vous recevez régulièrement des emails très similaires, vous pouvez utiliser un filtre dans Zapier pour appliquer une invite UNIQUEMENT à ce type d'email. Cela peut être un outil puissant lorsqu'il est combiné avec un formateur. Vous pouvez en extraire des informations et exporter des CSV ou les stocker directement dans une forme de base de données.
+Si vous recevez régulièrement des emails très similaires, vous pouvez utiliser un filtre dans Zapier pour appliquer un prompt UNIQUEMENT à ce type d'email. Cela peut être un outil puissant lorsqu'il est combiné avec un formateur. Vous pouvez en extraire des informations et exporter des CSV ou les stocker directement dans une forme de base de données.
 
 ## Préoccupations
 
